@@ -1,6 +1,10 @@
 # Visual SC Proyecto
 Este es el espacio oficial del proyecto **Visual SC** 
 
+<div align="center">
+  <img src="./rodson-logo.png" alt="Logo Rodson Coffee" width="200" style="background-color: white; padding: 12px; border-radius: 8px;" />
+</div>
+
 # Descripción del proyecto
 
 Este proyecto corresponde a un prototipo desarrollado en el marco de la empresa **Visual SC**, como parte del concurso [Hackabox](https://sandboxfundacion.org/) de apoyo al emprendimiento juvenil.
@@ -28,4 +32,43 @@ La interfaz incluye características de **accesibilidad para personas con discap
 ![MongoDB](https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Node.js](https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+# Características del proyecto
+
+### Catálogo digital del menú
+Menú completo de Rodson Coffee organizado en 8 categorías: base de espresso, métodos de café filtrado (inmersión, goteo, presión), bebidas frías, bebidas calientes sin café, pastelería dulce, pastelería de sal, alicorados y adiciones. Cada producto incluye nombre, precio y opciones de personalización.
+
+### Personalización de productos
+- **Espresso:** selección de tamaño, leche vegetal (+$5.5K), bola de helado de vainilla (+$4.5K), licor (+$8K)
+- **Métodos filtrados:** elección de método (inmersión/goteo/presión) y cantidad (1 taza $10K / 2 tazas $18K), con recargo de $3K para naturales y honeys
+- **Bebidas frías:** malteadas, limonadas, sodas, cervezas y más
+
+### Carrito de compras
+Sistema de carrito con acumulación de productos, visualización del total en tiempo real y posibilidad de agregar múltiples productos antes de confirmar la orden.
+
+### Flujo de pedido completo
+1. Iniciar pedido en el kiosco
+2. Elegir modalidad: para mesa o para llevar
+3. Construir la orden navegando categorías y personalizando
+4. Revisar y confirmar pedido
+5. Realizar pago
+6. Recibir número de orden
+
+### Selección de mesa
+Plano digital del local que permite al cliente elegir mesa cuando consume en el establecimiento, o tomar un número de mesa física.
+
+### Seguimiento de orden en tiempo real
+Pantalla de monitoreo donde el cliente ve el estado de su pedido ("en preparación" → "listo") y sabe cuándo recoger en barra o esperar al mesero en mesa.
+
+### Accesibilidad
+Interfaz diseñada con características de accesibilidad para personas con discapacidad, alineada con el propósito social de Visual SC.
+
+### Identidad de marca
+Diseño alineado con la estética de Rodson Coffee: elegancia artesanal, tono cercano y experiencia premium dentro del nicho de café de especialidad en Colombia.
+
+## User Flow
+
+<div align="center">
+  <img src="./user-flow.png" alt="User Flow - Flujo de pedido en kiosco" width="400" />
+</div>
 
