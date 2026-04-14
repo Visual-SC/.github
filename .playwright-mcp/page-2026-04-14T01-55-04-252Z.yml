@@ -1,0 +1,246 @@
+- generic [ref=e11]:
+  - generic [ref=e13]:
+    - link "Instagram" [ref=e16] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=e19]
+    - generic [ref=e24]:
+      - link "Iniciar sesión" [ref=e26] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Frodsoncoffee%2Freel%2FDVrmD1GDaL2%2F&source=desktop_nav
+      - link "Registrarte" [ref=e28] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - button [ref=e37]:
+          - group [ref=e48]:
+            - button [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - button "Foto del perfil de rodsoncoffee" [disabled] [ref=e59]:
+              - link "Foto del perfil de rodsoncoffee" [disabled] [ref=e61] [cursor=pointer]:
+                - img "Foto del perfil de rodsoncoffee" [ref=e62]
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - link "rodsoncoffee" [ref=e69] [cursor=pointer]:
+                  - /url: /rodsoncoffee/
+                  - generic [ref=e72]: rodsoncoffee
+                - generic [ref=e73]:
+                  - generic [ref=e75]: •
+                  - button "Seguir" [ref=e76] [cursor=pointer]
+              - link "Lunath, Ghostnaut, Fayelo • Flowers" [ref=e80] [cursor=pointer]:
+                - /url: /reels/audio/321779210507635/
+                - generic [ref=e83]:
+                  - text: Lunath, Ghostnaut, Fayelo
+                  - generic [ref=e84]: •
+                  - text: Flowers
+            - button "Más opciones" [ref=e87] [cursor=pointer]:
+              - img "Más opciones" [ref=e90]
+          - separator [ref=e94]
+          - generic [ref=e96]:
+            - generic [ref=e98]:
+              - link "Foto del perfil de rodsoncoffee" [ref=e100] [cursor=pointer]:
+                - /url: /rodsoncoffee/
+                - img "Foto del perfil de rodsoncoffee" [ref=e101]
+              - generic [ref=e105]:
+                - generic [ref=e106]:
+                  - link "rodsoncoffee" [ref=e107] [cursor=pointer]:
+                    - /url: /rodsoncoffee/
+                    - generic [ref=e110]: rodsoncoffee
+                  - time [ref=e112]: 5 sem
+                - generic [ref=e113]:
+                  - text: Lleva tu cafecito listo para preparar en cualquier lugar.
+                  - text: Consíguelo en nuestra tienda.
+                  - text: Pregunta por nuestros orígenes.
+            - button "Cargar más comentarios" [ref=e115] [cursor=pointer]:
+              - img "Cargar más comentarios" [ref=e117]
+            - generic [ref=e121]:
+              - heading "Todavía no hay comentarios." [level=2] [ref=e123]
+              - generic [ref=e125]: Inicia la conversación.
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - button "Me gusta" [ref=e131] [cursor=pointer]:
+                  - img "Me gusta" [ref=e134]
+                - button "11" [ref=e136] [cursor=pointer]
+                - button "Comentar" [ref=e138] [cursor=pointer]:
+                  - img "Comentar" [ref=e140]
+                - button "Compartir" [ref=e142] [cursor=pointer]:
+                  - img "Compartir" [ref=e143]
+              - button "Guardar" [ref=e147] [cursor=pointer]:
+                - img "Guardar" [ref=e149]
+            - link "9 de marzo" [ref=e153] [cursor=pointer]:
+              - /url: /rodsoncoffee/reel/DVrmD1GDaL2/
+              - time [ref=e155]: 9 de marzo
+          - generic [ref=e160]:
+            - link "Inicia sesión" [ref=e161] [cursor=pointer]:
+              - /url: /accounts/login/?next=%2Frodsoncoffee%2Freel%2FDVrmD1GDaL2%2F&source=post_comment_input
+            - text: para indicar que te gusta o comentar.
+      - separator [ref=e163]
+      - generic [ref=e164]:
+        - generic [ref=e166]:
+          - text: Más publicaciones de
+          - link "rodsoncoffee" [ref=e167] [cursor=pointer]:
+            - /url: /rodsoncoffee/
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - 'link "Photo by Rodson Coffee in Rodsoncoffee. May be an image of coffee cup, coffee maker, coffee and text that says ''風進 ACENDA ABIERTA TALLER DE CAFÉ FILTRADO PREPARA DIFERENTES CAFÉS EN DIFERENTES MÉTODOS. 2HORAS COSTO $110.000 INCLUYE SOUVENIR Rodion COFFEE COFFEE CARRERA2 CARRERA20#53- 20#53 53 35 GALERIAS INFO: 3016954232''." [ref=e173] [cursor=pointer]':
+              - /url: /rodsoncoffee/p/DUoUUsaiSr6/
+              - 'img "Photo by Rodson Coffee in Rodsoncoffee. May be an image of coffee cup, coffee maker, coffee and text that says ''風進 ACENDA ABIERTA TALLER DE CAFÉ FILTRADO PREPARA DIFERENTES CAFÉS EN DIFERENTES MÉTODOS. 2HORAS COSTO $110.000 INCLUYE SOUVENIR Rodion COFFEE COFFEE CARRERA2 CARRERA20#53- 20#53 53 35 GALERIAS INFO: 3016954232''." [ref=e176]'
+            - 'link "Photo by Rodson Coffee in Rodsoncoffee. May be an image of bread, kitchenware, pie and text that says ''NUESTRAS Catay de cafi খয়া Experiencia sensorial 4 muestras de café Souvenir 2 horas Costo $110.000 Rodson COFFEE CARRERA 20 53 CARRERA20#53-35 35 GALERIAS GAL LERIAS INFO: 3016954232''." [ref=e179] [cursor=pointer]':
+              - /url: /rodsoncoffee/p/DUoTh0MDyxg/
+              - 'img "Photo by Rodson Coffee in Rodsoncoffee. May be an image of bread, kitchenware, pie and text that says ''NUESTRAS Catay de cafi খয়া Experiencia sensorial 4 muestras de café Souvenir 2 horas Costo $110.000 Rodson COFFEE CARRERA 20 53 CARRERA20#53-35 35 GALERIAS GAL LERIAS INFO: 3016954232''." [ref=e182]'
+            - link "Hay cafés únicos. Clip" [ref=e185] [cursor=pointer]:
+              - /url: /rodsoncoffee/reel/DWc8N3mjVKz/
+              - img "Hay cafés únicos." [ref=e188]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+          - generic [ref=e190]:
+            - 'link "taller: pinta en MDF 🎨 un espacio para crear, conectar y abrazarte a través del arte 🤍🖌️ 🗓️ 28 de marzo 🕙 10:00 a.m. 📍 Rodson Coffee - Bogotá 💌Escríbenos y reservas con el 50% #planesbogota #artebogota #tallerescreativos Clip" [ref=e192] [cursor=pointer]':
+              - /url: /abrazarte_co/reel/DWJ1n29kq14/
+              - 'img "taller: pinta en MDF 🎨 un espacio para crear, conectar y abrazarte a través del arte 🤍🖌️ 🗓️ 28 de marzo 🕙 10:00 a.m. 📍 Rodson Coffee - Bogotá 💌Escríbenos y reservas con el 50% #planesbogota #artebogota #tallerescreativos" [ref=e195]'
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+            - 'link "Este sábado 28 y domingo 15 de marzo vamos a pintar lienzos, disfrutar de un delicioso brunch y reconectar 🎨❤️. Ven con tu date, con tus amigas o sola 💕🖌️ 📍Rodson Coffee, Bogotá 🕙 10:00 am- 1 pm Cupo limitado! Reserva por dm 💌 #planesbogota #manualidades #talleresbogota Clip" [ref=e198] [cursor=pointer]':
+              - /url: /abrazarte_co/reel/DVHd1WngbP7/
+              - 'img "Este sábado 28 y domingo 15 de marzo vamos a pintar lienzos, disfrutar de un delicioso brunch y reconectar 🎨❤️. Ven con tu date, con tus amigas o sola 💕🖌️ 📍Rodson Coffee, Bogotá 🕙 10:00 am- 1 pm Cupo limitado! Reserva por dm 💌 #planesbogota #manualidades #talleresbogota" [ref=e201]'
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+            - 'link "Taller pinta en mdf🎨 🗓️14 de febrero - 10 AM 📍Rodson Coffee - Bogotá ✨INCLUYE BRUNCH, KIT CON TODOS LOS MATERIALES Y DINÁMICA ESPECIAL☺️ Separa tu cupo con el 50% 💗 #planesenbogota #planesbogota #tallerescreativos Clip" [ref=e204] [cursor=pointer]':
+              - /url: /abrazarte_co/reel/DUT3kNWErrJ/
+              - 'img "Taller pinta en mdf🎨 🗓️14 de febrero - 10 AM 📍Rodson Coffee - Bogotá ✨INCLUYE BRUNCH, KIT CON TODOS LOS MATERIALES Y DINÁMICA ESPECIAL☺️ Separa tu cupo con el 50% 💗 #planesenbogota #planesbogota #tallerescreativos" [ref=e207]'
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+          - generic [ref=e209]:
+            - link "RED VELVET La favorita de muchos y la única que horneamos en casa. Ponemos todo el corazón a la mejor receta del mundo. Clip" [ref=e211] [cursor=pointer]:
+              - /url: /rodsoncoffee/reel/DT8OrOBjUz7/
+              - img "RED VELVET La favorita de muchos y la única que horneamos en casa. Ponemos todo el corazón a la mejor receta del mundo." [ref=e214]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+            - link "Gracias a todos los clientes que nos visitaron. Gracias a todo el equipo que día a día sirve cada taza con amor. Gracias @agenciadynamica que nos ayuda con toda la parte de diseño y decoración. Gracias a nuestro contador que siempre nos ayuda un montón. Gracias a los amigos que siempre nos visitan y nos recomiendan. Secuencia" [ref=e217] [cursor=pointer]:
+              - /url: /rodsoncoffee/p/DS_o5khDWsX/
+              - img "Gracias a todos los clientes que nos visitaron. Gracias a todo el equipo que día a día sirve cada taza con amor. Gracias @agenciadynamica que nos ayuda con toda la parte de diseño y decoración. Gracias a nuestro contador que siempre nos ayuda un montón. Gracias a los amigos que siempre nos visitan y nos recomiendan." [ref=e220]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Secuencia"
+        - generic [ref=e223]:
+          - link "Ver más publicaciones" [ref=e225] [cursor=pointer]:
+            - /url: /rodsoncoffee/
+            - generic [ref=e226]: Ver más publicaciones
+          - separator [ref=e227]
+  - contentinfo [ref=e228]:
+    - generic [ref=e229]:
+      - generic [ref=e231]:
+        - link "Meta" [ref=e233] [cursor=pointer]:
+          - /url: https://about.meta.com/
+          - generic [ref=e234]: Meta
+        - link "Información" [ref=e236] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+          - generic [ref=e237]: Información
+        - link "Blog" [ref=e239] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+          - generic [ref=e240]: Blog
+        - link "Empleo" [ref=e242] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+          - generic [ref=e243]: Empleo
+        - link "Ayuda" [ref=e245] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+          - generic [ref=e246]: Ayuda
+        - link "API" [ref=e248] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+          - generic [ref=e249]: API
+        - link "Privacidad" [ref=e251] [cursor=pointer]:
+          - /url: /legal/privacy/
+          - generic [ref=e252]: Privacidad
+        - link "Condiciones" [ref=e254] [cursor=pointer]:
+          - /url: /legal/terms/
+          - generic [ref=e255]: Condiciones
+        - link "Ubicaciones" [ref=e257] [cursor=pointer]:
+          - /url: /explore/locations/
+          - generic [ref=e258]: Ubicaciones
+        - link "Instagram Lite" [ref=e260] [cursor=pointer]:
+          - /url: /web/lite/
+          - generic [ref=e261]: Instagram Lite
+        - link "Meta AI" [ref=e263] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+          - generic [ref=e264]: Meta AI
+        - link "Threads" [ref=e266] [cursor=pointer]:
+          - /url: https://www.threads.com/
+          - generic [ref=e267]: Threads
+        - link "Importación de contactos y no usuarios" [ref=e269] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+          - generic [ref=e270]: Importación de contactos y no usuarios
+        - link "Meta Verified" [ref=e272] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+          - generic [ref=e273]: Meta Verified
+      - generic [ref=e274]:
+        - generic [ref=e275] [cursor=pointer]:
+          - generic [ref=e276]:
+            - generic [ref=e277]: Español
+            - img "Ícono de comilla angular abajo" [ref=e280]
+          - combobox "Cambiar idioma de visualización" [ref=e282]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English"
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español" [selected]
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=e284]: © 2026 Instagram from Meta

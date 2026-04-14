@@ -1,0 +1,22 @@
+flowchart TD
+    A([Inicio]) --> B[Kiosco: Iniciar pedido]
+    B --> C{¿Para aquí\no llevar?}
+    C --> D[Seleccionar categoría\ny producto]
+    D --> E{Personalizar\nsi aplica}
+    E --> F[Agregar al carrito]
+    F --> G{¿Agregar más?}
+    G -->|Sí| D
+    G -->|No| H[Confirmar orden]
+    H --> I[Pagar]
+    I --> J[Recibir número de orden]
+    J --> K[Monitorear pantalla]
+    K --> L{¿Orden lista?}
+    L -->|No| K
+    L -->|Sí| M{Entrega}
+    M -->|Mostrador| N[Recoger en barra]
+    M -->|Mesa| O[Mesero lo lleva]
+    N --> P[Consumir]
+    O --> P
+    P --> Q{¿Pedir más?}
+    Q -->|Sí| B
+    Q -->|No| R([Fin])

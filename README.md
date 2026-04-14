@@ -3,18 +3,19 @@ Este es el espacio oficial del proyecto **Visual SC**
 
 # Descripción del proyecto
 
-Este proyecto correponde a un prototipo en el marco de la creación de la empresa **Visual SC** 
-Un prospecto de compañía en el marco del concurso de la hackabox
+Este proyecto corresponde a un prototipo desarrollado en el marco de la empresa **Visual SC**, como parte del concurso [Hackabox](https://sandboxfundacion.org/) de apoyo al emprendimiento juvenil.
 
-https://sandboxfundacion.org/
+El objetivo es desarrollar una **aplicación web de pedidos en kiosco** para **Rodson Coffee**, una cafetería de especialidad ubicada en Bogotá (Carrera 20 #53-35) que combina café de especialidad, brunch y espacio cultural.
 
-cómo parte del apoyo al enprendimiento juvenil
+La aplicación permite al cliente:
 
-En ese sentido, se solicita a los desarrolladores del equipo realizar un rpototipo de alta fidelidad bajo los siguientes pasos
+1. Construir su orden desde un kiosco digital dentro del local
+2. Navegar el catálogo por categorías (espresso, métodos filtrados, bebidas frías/calientes, pastelería, alicorados y adiciones)
+3. Personalizar productos (tamaño, leche vegetal, helado, licor, método de preparación)
+4. Elegir consumo en mesa o para llevar
+5. Confirmar pedido, recibir número de orden y hacer seguimiento en pantalla hasta la entrega
 
-1. Tomar el menú de un establecimiento de cafe o restaurante
-2. Tomar foto del menú
-3. Hacer una aplicación web con el catálogo que incluya una interfaz para personas discapacitadas
+La interfaz incluye características de **accesibilidad para personas con discapacidad**.
 
 # Stack Tecnológico
 
