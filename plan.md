@@ -169,11 +169,9 @@ src/
 ├── layouts/
 │   ├── Header.tsx
 │   └── Footer.tsx
+├── pages/
+│   ├── Home.tsx
 ├── components/
-│   ├── pages/
-│   │   ├── Home.tsx                    # Home de pedido con aside de categorías + grilla de productos + aside de orden
-│   │   ├── ProductDetail.tsx           # Detalle con personalización
-│   │   └── OrderCreated.tsx            # Orden creada
 │   ├── ProductCard.tsx
 │   ├── CartItem.tsx
 │   ├── CategoriesAside.tsx
@@ -182,7 +180,8 @@ src/
 │   ├── OrderConfirmationFloating.tsx
 │   ├── EspressoCustomizer.tsx
 │   ├── FilteredCoffeeCustomizer.tsx
-│   └── CartSummary.tsx
+│   └── ProductDetail.tsx
+│   └── OrderCreated.tsx
 ```
 
 ---
