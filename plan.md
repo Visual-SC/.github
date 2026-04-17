@@ -202,13 +202,15 @@ src/
 ## Decisiones de Scope
 
 ### Incluido en MVP
+
 - Sistema de kiosco para pedidos en local
 - 7 categorías de productos con personalizaciones
-- Carrito con cálculo en tiempo real
-- Generación de número de orden
+- Orden con calculo total de la orden
+  - Generación de número de orden
 - API REST para catálogo y pedidos
 
 ### Excluido (fases posteriores)
+
 - Pasarela de pagos (pago en caja por ahora)
 - Pantalla de tracking para clientes
 - Asignación de ordenes por mesa
@@ -217,7 +219,3 @@ src/
 - Notificaciones push
 - Modo "para llevar"
 
-### Supuestos
-- Imágenes proporcionadas por el cliente
-
----
