@@ -79,33 +79,29 @@ Sistema de pedidos en kiosco para Rodson Coffee que permite a los clientes const
 
 ## FASE 3: Frontend — Interfaz de Kiosco
 
-### Pantallas Principales (F3-Screens)
+### Páginas Principales (F3-Screens)
 
 | # | Tarea | Ruta (React Router) | Descripción |
 |---|-------|---------------------|-------------|
-| F3.1 | Pantalla de inicio | `/` | Botón "Iniciar Pedido", branding Rodson |
-| F3.2 | Categorías | `/menu` | Grid de 7 categorías con iconos |
-| F3.3 | Productos por categoría | `/menu/:category` | Lista de productos con precio base |
-| F3.4 | Detalle de producto | `/menu/:category/:product` | Personalizaciones según tipo de producto |
-| F3.5 | Carrito | `/cart` | Resumen de items, edición, total |
-| F3.6 | Confirmación | `/checkout/confirm` | Resumen final, botón confirmar |
-| F3.7 | Orden creada | `/order/:number` | Número de orden grande, instrucciones |
+| F3.1 | Home de pedido | `/pages/Home` | Componente de página con aside de categorías + grilla de productos + aside de orden |
 
 ### Componentes de Negocio (F3-Components)
 
 | # | Tarea | Componente | Descripción |
 |---|-------|------------|-------------|
-| F3.8 | ProductCard | `components/features/ProductCard` | Card de producto con imagen, nombre, precio |
-| F3.9 | CartItem | `components/features/CartItem` | Línea de item en carrito |
-
+| F3.8 | ProductCard | `components/ProductCard` | Card de producto con imagen, nombre, precio |
+| F3.9 | CartItem | `components/CartItem` | Línea de item en carrito |
+| F3.10 | CategoriesAside | `components/CategoriesAside` | Aside con las categorías del menú para filtrar productos |
+| F3.11 | ProductsByCategoryGrid | `components/ProductsByCategoryGrid` | Grilla de productos filtrada por categoría seleccionada, contiene la grilla de productos con `ProductCard`|
+| F3.12 | OrderAside | `components/OrderAside` | Aside de orden dentro de Home con resumen de items, edición y total |
+| F3.13 | OrderConfirmationFloating | `components/OrderConfirmationFloating` | Interfaz flotante de confirmación de orden dentro de Home (sin cambio de ruta) |
 
 ### Layouts (F3-Layouts)
 
 | # | Tarea | Componente | Descripción |
 |---|-------|------------|-------------|
-| F3.18 | ProductGrid | `components/layouts/KioskLayout` | Layout con los productos organizados por categorías |
-| F3.19 | Header | `components/layouts/Header` | Logo, carrito mini, navegación |
-| F3.20 | CartFloating | `components/layouts/CartFloating` | Botón flotante con contador de items |
+| F3.19 | Header | `layouts/Header` | Logo, navegación y `CartFloating` integrado dentro del Header |
+| F3.20 | Footer | `layouts/Footer` | Footer con Redes sociales (instagram), Whatsapp, horario, CTA al final y créditos |
 
 ### Estado y Hooks (F3-State)
 
@@ -115,7 +111,7 @@ Sistema de pedidos en kiosco para Rodson Coffee que permite a los clientes const
 | F3.22 | useProducts hook | Fetch de productos con React Query (TanStack Query) |
 | F3.23 | useOrder hook | Crear orden, obtener estado |
 
-**Dependencias**: F3.1 depende de B1.3. F3.5 requiere F3.21. Las pantallas F3.6-F3.7 dependen de F3.5.
+**Dependencias**: F3.1 depende de B2.1 y B2.3 para cargar catálogo y filtrar por categoría, e integra los componentes F3.12 (OrderAside) y F3.13 (OrderConfirmationFloating). F3.12 requiere F3.21. La página F3.3 se renderiza tras confirmar orden desde Home.
 
 ---
 
@@ -130,19 +126,12 @@ Sistema de pedidos en kiosco para Rodson Coffee que permite a los clientes const
 | I4.3 | Crear pedido | Frontend envía carrito a `POST /api/orders` |
 | I4.4 | Mostrar número de orden | Recibir y mostrar `orderNumber` de respuesta |
 
-### Validaciones End-to-End (I4-Validation)
-
-| # | Tarea | Descripción |
-|---|-------|-------------|
-| I4.6 | Validar carrito no vacío | Para el componente Order si no hay productos agregados, renderizar en la card que no hay productos, e invitar al usuario a agregar productos |
-| I4.7 | Validar precios correctos | Comparar cálculo frontend vs backend |
-| I4.8 | Manejar errores de API | Mostrar mensajes claros, no perder carrito |
-
 ---
 
 ## Archivos Relevantes
 
 ### Backend (MVC)
+
 ```
 src/
 ├── app.js                  # Entry point, configuración Express
@@ -169,15 +158,7 @@ src/
 ```
 src/
 ├── main.tsx                            # Entry point
-├── App.tsx                             # Router principal
-├── pages/
-│   ├── Home.tsx                        # Pantalla de inicio
-│   ├── Menu.tsx                        # Categorías
-│   ├── CategoryProducts.tsx            # Productos por categoría
-│   ├── ProductDetail.tsx               # Detalle con personalización
-│   ├── Cart.tsx                        # Carrito
-│   ├── Confirmation.tsx                # Confirmación
-│   └── OrderCreated.tsx                # Orden creada
+├── App.tsx                             # Router principal que monta componentes de página
 ├── stores/
 │   └── cartStore.ts                    # Zustand store del carrito
 ├── hooks/
@@ -185,18 +166,23 @@ src/
 │   ├── useOrder.ts                     # Crear y obtener órdenes
 ├── services/
 │   └── api.ts                          # Cliente API con axios/fetch
+├── layouts/
+│   ├── Header.tsx
+│   └── Footer.tsx
 ├── components/
-│   ├── features/
-│   │   ├── EspressoCustomizer.tsx
-│   │   ├── FilteredCoffeeCustomizer.tsx
-│   │   ├── ProductCard.tsx
-│   │   ├── CartItem.tsx
-│   │   └── CartSummary.tsx
-│   ├── layouts/
-│   │   ├── KioskLayout.tsx
-│   │   └── Header.tsx
-│   └── ui/                             # Componentes base reutilizables
-└── types/                              # Tipos TypeScript compartidos
+│   ├── pages/
+│   │   ├── Home.tsx                    # Home de pedido con aside de categorías + grilla de productos + aside de orden
+│   │   ├── ProductDetail.tsx           # Detalle con personalización
+│   │   └── OrderCreated.tsx            # Orden creada
+│   ├── ProductCard.tsx
+│   ├── CartItem.tsx
+│   ├── CategoriesAside.tsx
+│   ├── ProductsByCategoryGrid.tsx
+│   ├── OrderAside.tsx
+│   ├── OrderConfirmationFloating.tsx
+│   ├── EspressoCustomizer.tsx
+│   ├── FilteredCoffeeCustomizer.tsx
+│   └── CartSummary.tsx
 ```
 
 ---
@@ -205,11 +191,11 @@ src/
 
 | # | Caso de Prueba | Resultado Esperado |
 |---|----------------|---------------------|
-| 1 | Navegar todas las categorías | Ver productos con precios correctos |
+| 1 | Navegar categorías desde el aside de Home | Ver actualización de la grilla con productos y precios correctos |
 | 2 | Latte + leche vegetal + helado | $8,500 + $5,500 + $4,500 = **$18,500** |
 | 3 | Chemex 2 tazas Natural | $18,000 + $3,000 = **$21,000** |
 | 4 | Agregar 3 productos, modificar, eliminar uno | Total recalculado correctamente |
-| 5 | Confirmar pedido | Número de orden único, persistido en BD |
+| 5 | Confirmar pedido desde Home | Mostrar interfaz flotante de confirmación sin salir de Home y número de orden persistido en BD |
 
 ---
 
