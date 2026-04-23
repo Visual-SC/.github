@@ -14,7 +14,7 @@ La aplicación permite al cliente:
 1. Construir su orden desde un kiosco digital dentro del local
 2. Navegar el catálogo por categorías (espresso, métodos filtrados, bebidas frías/calientes, pastelería, alicorados y adiciones)
 3. Personalizar productos (tamaño, leche vegetal, helado, licor, método de preparación)
-4. Elegir consumo en mesa o para llevar
+4. Elegir consumo en mesa (por ahora el MVP sólo contempla la venta en el lugar)
 5. Confirmar pedido, recibir número de orden y hacer seguimiento en pantalla hasta la entrega
 
 La interfaz incluye características de **accesibilidad para personas con discapacidad**.
